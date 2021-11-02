@@ -14,6 +14,7 @@ pip install ecomplexity
 
 ### Usage
 CEPII-BACI trade data is a required input (.csv). The BACI data is available at: http://www.cepii.fr/CEPII/fr/bdd_modele/presentation.asp?id=37
+
 Full IO-PS analysis requires a value chain input (.csv). Three columns are required: 'Tier', 'Category' and 'HS Trade Code' 
 
 ```python
