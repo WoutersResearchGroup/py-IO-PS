@@ -481,16 +481,16 @@ def ecomplexity(data, cols_input, statanorm=False):
         if statanorm == True:
             # Normalize pci as per STATA package
             print('Normalizing PCI as per STATA package')
-            cdata.pci_t = (cdata.pci_t - cdata.eci_t.mean()) / cdata.eci_t.std()
+            cdata.pci_t = (cdata.pci_t - cdata.eci_t.mean()) / cdata.eci_t.std(ddof=1)
         else:
             # Normalize pci as per literature
-            cdata.pci_t = (cdata.pci_t - cdata.pci_t.mean()) / cdata.pci_t.std()
+            cdata.pci_t = (cdata.pci_t - cdata.pci_t.mean()) / cdata.pci_t.std(ddof=1)
             print('Normalizing PCI as per literature')
         # Normalize eci and cog as per STATA package
-        cdata.cog_t = cdata.cog_t / cdata.eci_t.std()
-        cdata.eci_t = (cdata.eci_t - cdata.eci_t.mean()) / cdata.eci_t.std()
+        cdata.cog_t = cdata.cog_t / cdata.eci_t.std(ddof=1)
+        cdata.eci_t = (cdata.eci_t - cdata.eci_t.mean()) / cdata.eci_t.std(ddof=1)
 
-        cdata.coi_t = (cdata.coi_t - cdata.coi_t.mean()) / cdata.coi_t.std()
+        cdata.coi_t = (cdata.coi_t - cdata.coi_t.mean()) / cdata.coi_t.std(ddof=1)
 
         # Reshape ndarrays to df
         cdata = reshape_output_to_data(cdata, t)
