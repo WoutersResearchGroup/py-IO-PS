@@ -1,6 +1,5 @@
 # py-IO-PS
-Public repository of developmental Python code related to research on the input-output product space (IO-PS) 
-[Described in Bam, W., &amp; De Bruyne, K. (2019). Improving Industrial Policy Intervention: The Case of Steel in South Africa. The Journal of Development Studies, 55(11), 2460–2475. https://doi.org/10.1080/00220388.2018.1528354]
+Public repository of developmental Python code related to research on the input-output product space (IO-PS). A version of the code is described in the paper: [M. du Plessis and W. Bam, “iops: a Python package for the Input-Output Product Space methodology,” in 2022 IEEE 28th International Conference on Engineering, Technology and Innovation (ICE/ITMC) & 31st International Association For Management of Technology (IAMOT) Joint Conference, Nancy, France: IEEE, Jun. 2022, pp. 1–8. doi: 10.1109/ICE/ITMC-IAMOT55089.2022.10033299](https://doi.org/10.1109/ICE/ITMC-IAMOT55089.2022.10033299).
 
 ## Package
 
@@ -65,6 +64,8 @@ def iops(tradedata, valuechain=None, countrycode=710, tradedigit=6, statanorm=Fa
 
 * Bam, W., & De Bruyne, K. (2017). Location policy and downstream mineral processing: A research agenda. Extractive Industries and Society, 4(3), 443–447. https://doi.org/10.1016/j.exis.2017.06.009
 * Marais, M., & Bam, W. (2019). Developmental potential of the aerospace industry: the case of South Africa. In 2019 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC) (pp. 1–9). IEEE. https://doi.org/10.1109/ICE.2019.8792812
+* Du Plessis, M., & Bam, W. (2022). iops: A Python package for the Input-Output Product Space methodology. 2022 IEEE 28th International Conference on Engineering, Technology and Innovation (ICE/ITMC) & 31st International Association For Management of Technology (IAMOT) Joint Conference, 1–8. https://doi.org/10.1109/ICE/ITMC-IAMOT55089.2022.10033299
+
 
 ### Economic Complexity and Product Complexity
 This packages uses a modified copy of the Growth Lab at Harvard's Center for International Development py-ecomplexity package. The ecomplexity package is used to calculate economic complexity indices: https://github.com/cid-harvard/py-ecomplexity
